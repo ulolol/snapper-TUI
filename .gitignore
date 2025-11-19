@@ -8,6 +8,8 @@ __pycache__
 
 # Ignore local build files
 build
+dist
+snapper_tui.egg-info
 
 # Ignore Claude Fixes Logs
 AILog.md
