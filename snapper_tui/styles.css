@@ -1,0 +1,28 @@
+#snapshot_table {
+  border: panel $background;
+  width: 2fr;
+}
+
+#action_panel {
+  border: round $primary;
+  padding: 1 1;
+  width: 1fr;
+}
+
+#snapshot_details {
+  border: panel $surface-darken-2;
+  padding: 1;
+  min-height: 12;
+}
+
+#action_message {
+  border: panel $surface-darken-2;
+  padding: 1;
+  min-height: 6;
+}
+
+#space_summary {
+  border: tall $surface-darken-2;
+  text-align: right;
+  padding: 0 2;
+}
