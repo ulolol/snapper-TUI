@@ -8,7 +8,7 @@ __pycache__
 
 # Ignore local build files
 build
-dist
+#dist
 snapper_tui.egg-info
 
 # Ignore Claude Fixes Logs
