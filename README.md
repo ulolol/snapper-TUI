@@ -16,6 +16,20 @@ Browse, sort, restore, and delete snapshots all within your terminal. The TUI pr
 - **Detailed Preview**: View full snapshot metadata before executing commands
 - **Multiple Exit Methods**: Press ESC or Ctrl+Q to quit
 
+## Screenshots
+
+### Loading State
+Loading snapshots with animated spinner and quota data calculation:
+![Loading](loading.png)
+
+### Snapshot Browser
+Main interface showing sortable snapshot list with details panel:
+![Main Interface](main.png)
+
+### Status View
+File changes comparison when viewing snapshot status:
+![Status Output](status.png)
+
 ## Requirements
 
 - **System**: Linux with Btrfs filesystem
