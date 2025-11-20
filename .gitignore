@@ -2,6 +2,9 @@
 .claude
 .ruff_cache
 __pycache__
+run_snapper_tui.build
+run_snapper_tui.dist
+run_snapper_tui.onefile-build
 
 # Ignore venv
 .venv
