@@ -51,6 +51,7 @@ pip install -e .
 ```
 
 ### Option 2: Install from Package
+##### Once I get around to *actually* publishing it
 ```sh
 pip install snapper-tui
 ```
@@ -58,7 +59,9 @@ pip install snapper-tui
 ### Option 3: Standalone Executable (Linux)
 ```sh
 # Build the executable
+
 pip install pyinstaller
+
 pyinstaller \
   --onefile \
   --console \
@@ -68,6 +71,25 @@ pyinstaller \
 
 # Run it (still requires snapper installed)
 sudo dist/snapper-tui
+```
+
+### Option 4: Native Executable (Nuitka)
+##### This is different from the standalone executable in that it does not require python to run, and it gets compiled to native code, so you *might* get better performance.
+```sh
+# Build with Nuitka (replace python3.13 with installed python version)
+
+pip install nuitka  
+
+python3.13 -m nuitka \
+  --onefile \
+  --include-package=textual \
+  --include-data-dir=snapper_tui=snapper_tui \
+  --output-filename=dist/snapper-tui-native \
+  --lto=yes \
+  run_snapper_tui.py
+
+# Run the native executable
+sudo dist/snapper-tui-native
 ```
 
 ## Usage
